@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showbox music World</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+    <div class="header">
+        <div class="logo">
+            <p><a href="#">showbox</a></p>
+        </div>
+        <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" name="search" id="search" placeholder="Search Music.....">
+        </div>
+        <div class="login">
+            <li><button type="button"><a href="login.html"><i class="bi bi-person"></i>Login</a></button></li>
+        </div>
+        <!-- <div class="sidebar"></div> -->
+    </div>
+    </section>
+    <nav>
+        <ul class="cateogorylistcontainer">
+            <li class="navlist"><a href="index.html">all</a></li>
+            <li class="navlist"><a href="trending.html">trending now</a></li>
+            <li class="navlist"><a href="oldsongs.html">old songs</a></li>
+            <li class="navlist"><a href="#">new songs</a></li>
+            <li class="cateogorylist">
+                <a href="#">mood & genere<i class="bi bi-chevron-down"></i></a>
+                <div class="dropdown">
+                    <ul class="__0xv">
+                        <li><a href="">Party Songs</a></li>
+                        <li><a href="">Dance Songs</a></li>
+                        <li><a href="">Bollywood Songs</a></li>
+                        <li><a href="">Romantic Songs</a></li>
+                        <li><a href="">90's Hits</a></li>
+                        <li><a href="">Ghazals</a></li>
+                        <li><a href="">Bhakti Songs</a></li>
+                        <li><a href="">LoFI songs</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="cateogorylist">
+                <a href="#">top albums<i class="bi bi-chevron-down"></i></a>
+                <div class="dropdown">
+                    <ul class="__0xv">
+                        <li><a href="">top hindi albums</a></li>
+                        <li><a href="">top english albums</a></li>
+                        <li><a href="">top telugu albums</a></li>
+                        <li><a href="">top bengali albums</a></li>
+                        <li><a href="">top bhojpuri albums</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navlist"><a href="top-artist.html">top artists</a></li>
+            <li class="cateogorylist">
+                <a href="#">top playlist<i class="bi bi-chevron-down"></i></a>
+                <div class="dropdown">
+                    <ul class="__0xv">
+                        <li><a href="">wynk top 100 Songs</a></li>
+                        <li><a href="">trending hindi Songs</a></li>
+                        <li><a href="">top english Songs</a></li>
+                        <li><a href="">trending reels Songs</a></li>
+                        <li><a href="">top romantic hits</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navlist"><a href="#">podcast</a></li>
+        </ul>
+    </nav>
+    <div class="slider_wrapper">
+        <div class="slider_container">
+            <div class="slider_item">
+                <img src="./SWIPPER/animal.webp" alt="">
+                <img src="./SWIPPER/bo23.webp" alt="">
+                <img src="./SWIPPER/DUNKI.webp" alt="">7
+                <img src="./SWIPPER/banner6.webp" alt="">
+                <img src="./SWIPPER/banner5.webp" alt="">
+                <img src="./SWIPPER/banner4.webp" alt="">
+                <a href="https://youtu.be/X-7qyFZAPao?si=i_nkg8gjJcVPCEZW"><img src="./SWIPPER/banner8.webp" alt=""></a>
+                <img src="./SWIPPER/beyound bollywood.webp" alt="">
+                <img src="./SWIPPER/darsan.webp" alt="">
+            </div>
+        </div>
+        <div class="btns">
+            <button class="bi bi-chevron-left" id="pop_song_left1" onclick="goPrev()"></button>
+            <button class="bi bi-chevron-right"id="pop_song_right1" onclick="goNext()"></button>
+            </div>
+    </div>
+    
+    <div class="new-releases">
+        <div class="h4">
+            <h1>New Releases</h1>
+            <div class="btn_s">
+                <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                <i class="bi bi-arrow-right-short"id="pop_song_right"></i>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img src="./newrel/animal.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Animal</h4>
+            </div>
+            
+            <div class="item">
+                <img src="./newrel/dunki.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Dunki</h4>
+            </div>
+            <div class="item">
+                <img src="./newrel/newrel1.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+            <div class="item">
+                <img src="./newrel/newrel2.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>New हिन्दी songs</h4>
+            </div>
+
+            <div class="item">
+                <img src="./newrel/newrel4.jpeg" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>jawan</h4>
+            </div>
+
+            <div class="item">
+                <img src="./newrel/newrel6.jpeg" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>the great indian family</h4>
+            </div>
+
+            <div class="item">
+                <img src="./newrel/newrel7.jpeg" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>aadipurush</h4>
+            </div>
+
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="top-chart">
+        <h1>top charts</h1>
+        <div class="list">
+
+            <div class="item">
+                <img src="./top-chart/trend8.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>radio top 20</h4>
+            </div>
+
+            <div class="item">
+                <img src="./top-chart/trend2.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+            <div class="item">
+                <img src="./top-chart/trend3.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+            <div class="item">
+                <img src="./top-chart/trend4.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+            <div class="item">
+                <img src="./top-chart/trend5.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+            
+            <div class="item">
+                <img src="./top-chart/trend6.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+            <div class="item">
+                <img src="./top-chart/trend6.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Yaariyaan 2</h4>
+            </div>
+
+
+        </div>
+    </div>  
+    <hr>
+
+    <div class="artist">
+        <div class="h4">
+            <h1>top indian artists</h1>
+           <div class="btns">
+              <i class="bi bi-arrow-left-short"></i>
+               <i class="bi bi-arrow-right-short"></i>
+           </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img src="./artist/arijitsingh.webp">
+                <h4><a href="arijit.html">arijit singh</a></h4>
+            </div>
+            <div class="item">
+                <img src="./artist/alka.webp" >
+                <h4>alka yagnik</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/jonita.webp" >
+                <h4>jonita gandhi</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/jubin.webp" >
+                <h4>jubin nautial</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/yo yo.webp" >
+                <h4>yo yo honey singh</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/sonu.webp" >
+                <h4>sonu nigam</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/shreya.webp" >
+                <h4>shreya ghoshal</h4>
+            </div>
+            <div class="item">
+                <img src="./artist/nikhita.webp" >
+                <h4>nikhita gandhi</h4>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+
+    <div class="regional">
+        <h1>regional top 20</h1>
+        <div class="list">
+
+            <div class="item">
+                <img src="./regional/1.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>telegu</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/2.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Tamil</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/3.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>haryanvi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/4.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>kannada</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/5.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>bhojpuri</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/6.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>bengali</h4>
+            </div>
+
+            <div class="item">
+                <img src="./regional/7.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>odia</h4>
+            </div>
+           
+        </div>
+    </div>
+    <hr>
+
+    <div class="evo">
+        <h1>Evolution of music</h1>
+        <div class="list">
+
+            <div class="item">
+                <img src="./evolution/60.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Evergreen 60s- Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/70s.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Golden 70s- Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/80.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>80s Rewind- Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/90.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Throwback 90s- Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/00.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Superhit 2000s- Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/2010.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Biggest Hits Of 2010s - Hindi</h4>
+            </div>
+
+            <div class="item">
+                <img src="./evolution/2010ENG.webp" >
+                <div class="play">
+                    <span class="fa fa-play"></span>
+                </div>
+                <h4>Biggest Hits Of 2010s - English</h4>
+            </div>
+           
+        </div>
+    </div>
+    <hr>
+<div class="footer">
+    <div class="cont1">
+        <ul>
+            <li>
+                <h4>LATEST ALBUMS</h4>
+                <p>Scarlet  |  NEW LIFE  |  Vikram Original Motion Picture Soundtrack  |  Shubh Vivah  |  Thallumaala  |  Pushpa - The Rise  |  Ninna Sanihake  |  Praktan  |  No Name  |  Bhavartha Mauli  |  Yuva Sarkar  |  Mal mahu jiban mati  |  GUTS</p>
+            </li>
+            <li>
+                <h4>EXPLORE MUSIC GENRES</h4>
+                <p>Rock Songs  |  Patriotic songs  |  Sufi Music  |  Ghazals  |  Workout Music  |  Devotional Songs  |  Sad Songs  |  DJ Songs</p>
+            </li>
+            <li>
+                <h4>OLD SONGS</h4>
+                <p>Old  Songs  |  Old Hindi Songs  |  Old English Songs  |  Old Punjabi Songs  |  Old Telugu Songs  |  Old Tamil Songs  |  Old Bengali Songs  |  Old Malayalam Songs  |  Old Kannada Songs</p>
+            </li>
+            <li>
+                <h4>TOP ARTISTS</h4>
+                <p>Guru Randhawa  |  Arijit Singh  |  Atif Aslam  |  Justin Bieber  |  Gulzar  |  Armaan Malik  |  Sidhu Moose Wala  |  Alan Walker  |  Udit Narayan  |  Sonu Nigam  |  Sid Sriram  |  Akhil  |  Darshan Raval  |  Shreya Ghoshal  |  Alka Yagnik</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>REGIONAL PLAYLISTS</h4>
+                <p>New Bengali Songs  |  New Bhojpuri Songs  |  New English Songs  |  New Haryanvi Songs  |  New Hindi Songs  |  New Kannada Songs  |  New Marathi Songs  |  New Punjabi Songs  |  New Tamil Songs  |  New Telugu Songs  |  New Odia Songs  |  New Rajasthani Songs  |  New Gujarati Songs  |  New Assamese Songs</p>
+            </li>
+
+            <li>
+                <h4>LATEST SONGS</h4>
+                <p>Tu Jaana Na Piya  |  Hua Main (From "ANIMAL")  |  Aakhir  |  Silli Silli  |  Aafat  |  Jaan Da (Saiyaan Ve)  |  Bolo Na (From "12th Fail")  |  Hum Aaye Hain  |  Keh Na Saka  |  Tere Dil Tak Aana Hai  |  Mera Piya Ghar Aaya 2.0  |  Masti Gad Gad (From "Pyaar Hai Toh Hai")  |  Jhoome Nain  |  Bhool Jaa  |  Samandar Sharaab</p>
+            </li>
+            <li>
+                <h4>TRENDING SONGS</h4>
+                <p>Heeriye (feat. Arijit Singh)  |  Chaleya (From "Jawan")  |  Apna Bana Le  |  Zihaal e Miskin  |  O Piya  |  Guli Mata  |  Kya Loge Tum  |  Yaar Ka Sataya Hua Hai  |  Dil Jhoom  |  Phir Aur Kya Chahiye (From "Zara Hatke Zara Bachke")  |  Jaane Jaa  |  What Jhumka ? (From "Rocky Aur Rani Kii Prem Kahaani")  |  Maula  |  Gone Girl  |  Ram Siya Ram (From "Adipurush")</p>
+            </li>
+            <li>
+                <h4>SONGS WITH LYRICS</h4>
+                <p>Coca Cola  |  Bom Diggy Diggy  |  Machayenge  |  Tera Yaar Hoon Main  |  Kar Gayi Chull (From "Kapoor & Sons (Since 1921)")  |  Morni Banke  |  Chalti Hai Kya 9 Se 12  |  Hawayein</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h4>SHOWBOX TOP HITS</h4>
+                <p>Top 20 Bollywood Songs  |  Showbox Top 100 Songs  |  Top 20 English Songs  |  Trending Reels Songs</p>
+            </li>
+            <li>
+                <h4>DEVOTIONAL SONGS</h4>
+                <p>Ganesh Ji Ki Aarti  |  Laxmi Ji Ki Aarti  |  Shri Hanuman Chalisa  |  Shiv Bhajan  |  Gurbani  |  Gurbani Shabad  |  Islamic Songs  |  Jesus Songs  |  Christian Songs</p>
+            </li> 
+            <li>
+                <h4>JOIN ME FOR ARTISTS</h4>
+                <P> Studio  | Studio for Artists</P>
+            </li>       
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="footer1">
+    <div class="cont2">
+        <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">HELLOTUNES</a></li>
+        </ul>
+        <div class="social-btns">
+            <ul>
+                <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a href="#" target="_blank"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="cont3">
+        <ul>
+            <li>Showbox is the one-stop music app for the latest to the greatest songs that you love. Play your favourite music online for free or download mp3. Enjoy from over 22 Million Hindi, English, Bollywood, Regional, Latest, Old songs and more.</li>
+            <li>2023 © All rights reserved | Airtel Digital Limited</li>
+        </ul>
+        
+    </div>
+</div>
+<div class="master_play">
+    <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+    </div>
+    <img src="./trending song/1.webp" alt="" id="poster_master_play">
+    <h5 id="title">
+        HUM aayein Hain
+        <div class="subtitle">arijit singh</div>
+    </h5>
+    <div class="icons">
+        <i class="bi suffle bi-music-note-beamed">next</i>
+        <i class="bi bi-skip-start-fill"></i>
+        <i class="bi bi-play-fill"></i>
+        <i class="bi bi-skip-end-fill"></i>
+        <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+    </div>
+    <span id="currentstart">0:00</span>
+    <div class="bar">
+        <input type="range" id="seek" min="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+    </div>
+    <span id="currentend">0:30</span>
+    <div class="vol">
+        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+        <input type="range" min="0" max="100" id="vol">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot" id="vol_dot"></div>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+<!-- <script src="demo.js"></script> -->
+</body>
+</html>

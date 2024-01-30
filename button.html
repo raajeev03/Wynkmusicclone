@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Artists</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <button id="see-all-artists">See All Artists
+      <div id="popup-modal" class="modal">
+        <div class="modal-content">
+           <div class="nav">
+            <h2>Artists<span class="close">&times;</span> </h2>
+           </div>
+           <div class="all-artists">
+              <div class="artist">
+                  <img src="top-artist/1.webp" alt="Artist 1" />
+                   <p>Artist 1</p>
+               </div>
+              <div class="artist">
+                  <img src="top-artist/1.webp" alt="Artist 2" />
+                  <p>Artist 2</p>
+              </div>
+              <div class="artist">
+                     <img src="top-artist/1.webp" alt="Artist 2" />
+                     <p>Artist 2</p>
+                          </div>
+                     <div class="artist">
+             <img src="top-artist/1.webp" alt="Artist 2" />
+             <p>Artist 2</p>
+                     </div>
+                     <div class="artist">
+             <img src="top-artist/1.webp" alt="Artist 2" />
+             <p>Artist 2</p>
+                     </div>
+                     <div class="artist">
+             <img src="top-artist/1.webp" alt="Artist 2" />
+             <p>Artist 2</p>
+                     </div>
+                     <div class="artist">
+             <img src="top-artist/1.webp" alt="Artist 2" />
+             <p>Artist 2</p>
+                     </div>
+                     <div class="artist">
+             <img src="top-artist/1.webp" alt="Artist 2" />
+             <p>Artist 2</p>
+                     </div>
+             </div>
+            </div>
+         </div>
+      </div>
+   </button>
+    <script>
+
+// seeAllArtistsButton.addEventListener('click', function () {
+//     window.scrollTo(0, 0); // added line
+//     popupModal.style.display = 'block';
+// });
+       document.addEventListener('DOMContentLoaded', function () {
+ var seeAllArtistsButton = document.getElementById('see-all-artists');
+ var popupModal = document.getElementById('popup-modal');
+ var closeModalButton = document.getElementsByClassName('close')[0];
+
+ seeAllArtistsButton.addEventListener('click', function () {
+    popupModal.style.display = 'block';
+ });
+
+ closeModalButton.addEventListener('click', function () {
+    popupModal.style.display = 'none';
+ });
+
+ window.addEventListener('click', function (event) {
+    if (event.target == popupModal) {
+      popupModal.style.display = 'none';
+    }
+ });
+});
+    </script>
+</body>
+</html>

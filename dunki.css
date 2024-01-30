@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+}
+body{
+   background-color:#000000;
+   width: 100%;
+   height: 100vh;
+   font-family:'roboto',sans-serif;
+   box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+   display: none;
+}
+section{
+   background-color:  #1c1c1c;
+   height:72px;
+}
+.header{
+   padding-top: 5px;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   display: flex;
+   
+}
+.header:hover{
+  transition: all 0s ease 0s;
+}
+section .header .logo p{
+   margin-top: 8px;
+   
+}
+section .header .logo p a{
+   font-family:'Ubuntu';
+   font-family: 'Kanit';
+   text-decoration: none;
+   font-size: 35px;
+   line-height: 28px;
+   font-weight: 300;
+   text-transform: capitalize;
+   color:#ffffff;
+   cursor: pointer;
+   
+}
+.search{
+   margin: auto;
+   margin-top: 16px;
+   border-radius:5px;
+   border-width:5px;
+   width:30%;
+   height:5vh;
+   background-color:#575757;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family:'Ubuntu';
+}
+.search input{
+   width:85%;
+   height:4vh;
+   margin:0 10px;
+   border: none;
+   background-color: transparent;
+   outline: none;
+   color: white;
+}
+.search input::placeholder{
+   color: white;
+}
+.search i{
+   font-weight:bolder;
+}
+.login button{
+   margin-top: 16px;
+   font-family:'Ubuntu';
+   font-family: 'Kanit';
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 28px;
+   font-weight: 300;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-decoration:none;
+   background-color:  #1c1c1c;
+   border-style: none;
+   color:#ffffff;
+}
+.login li{
+  list-style: none;
+   
+}
+.login li a {
+   display: flex;
+   gap: 3px;
+  text-decoration: none;
+  color: #ffffff;
+   
+}
+/* .container hr{
+   margin:70px 0px 0px;
+   border-color: #636363;
+} */
+nav{
+   width: 100%;
+   height: 8vh;
+   background-color:black;
+   display: flex;
+   align-items: center;
+   margin-left: 4.6296vh;
+}
+nav .cateogorylistcontainer{
+   padding:0 10px;
+   font-family: 'roboto',sans-serif;
+}
+nav .cateogorylistcontainer .navlist{
+   display:inline-block;
+   list-style:none;    
+   margin:0 10px;
+}
+nav .cateogorylistcontainer .navlist a{
+   text-transform:capitalize;
+   text-decoration:none;
+   font-size:20px;
+   font-weight:500;
+   color:white;
+}
+nav .cateogorylistcontainer .navlist a i{
+   font-size:15px;
+   margin-left:3px;
+}
+nav .cateogorylistcontainer .cateogorylist{
+   display:inline-block;
+   list-style:none;    
+   margin:0 10px;
+}
+nav .cateogorylistcontainer .cateogorylist a{
+   text-transform:capitalize;
+   text-decoration:none;
+   font-size:18px;
+   font-weight:500;
+   color:white;
+}
+nav .cateogorylistcontainer .cateogorylist a i{
+   font-size:15px;
+   margin-left:3px;
+}
+.active-dropdown{
+   display: block !important;
+}
+.dropdown{
+   display: none;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top:16%;
+   background-color:#333;
+   width:auto;
+   height: auto;
+   padding:10px 20px;
+   border-radius:10px;
+   z-index: 9999999999999999999999999999999999999999999999999999999;
+}
+.dropdown .__0xv li{
+   list-style:none;
+   margin:15px 0;
+}
+.dropdown .__0xv li a{
+   font-size:16px;
+   color:silver;
+   text-transform: capitalize;
+}
+.dropdown .__0xv li a:hover{
+   color:white;
+   border-bottom: 1px solid white;
+}
+
+.layout1{
+    width: 1306.5px;
+    background-color:#000000;
+    margin-left: 106.35px;
+}
+.layout1 .navbar{
+    height: 26.4px;
+}
+.layout1 .navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+.layout1 .navbar ul li{
+    padding:3px;
+    font-size: 11px;
+    font-family:'roboto',sans-serif;
+    text-transform: capitalize;
+    color: #575757;
+}
+.layout{
+    display: flex;
+    width: 1306.5px;
+    background-color:#000000;
+    margin-left: 106.35px;
+}
+.layout .sidebar{
+    width: 326.625px;
+    padding-top: 10px;
+}
+.layout .sidebar img{
+    border-radius: 0.75rem;
+    height: 248px;
+    width: 248px;
+}
+.layout .artists{
+    width: 326.625px;
+    height: 500px;
+    margin-top: 50px;
+}
+.layout .artists h1{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.layout .artist_img {
+    padding-top: 20px;
+}
+.layout .artist_img .detail{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.layout .artist_img .detail img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%
+}
+.layout .artist_img .detail h5{
+    color: #ffffff;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.layout .artist_img .mybtn{
+    height: 37px;
+    width: 327px;
+    margin-top: 20px;
+    
+}
+.layout .artist_img .mybtn button{
+    
+    background-color:#000000;
+    font-size: 14px;
+    height: 37px;
+    width: 115px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+
+}
+.layout .artist_img button:hover{
+    background-color: #333;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #282F36;
+}
+.modal-content {
+    background-color: #282F36;
+    margin: 15% auto;
+    padding: 20px;
+    z-index: 2;
+    width: 512px;
+    height: 671px;
+    overflow: auto;
+    position: relative;
+    }
+    .modal-content::-webkit-scrollbar {
+    display: none;
+    }    
+    .modal-content h2 {
+    position: absolute;
+    top: 0;
+    margin-left: 5px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: #282F36;
+    }
+    .navigation{
+    background-color: #282F36;
+    position: fixed;
+    top: 11.3vh;
+    }
+    .navigation h2{
+    position: absolute;
+    height: 28px;
+    width: 472px;
+    font-size: 20px;
+    z-index: 9;
+    color: #fefefe;
+    }
+    .all-artists {
+    background-color: #282F36;
+     display: flex;
+    flex-direction: column;
+    height: 584px;
+    margin-top: 50px; 
+    width: 472px;
+    }
+    .all-artists-wrapper {
+    position: relative;
+    overflow: hidden;
+    }
+    .all-artists-wrapper h2 {
+    position: sticky;
+    top: 0;
+    background-color: #1a1717;
+    padding: 10px;
+    margin: 0;
+    color: #fefefe;
+    }
+    .all-artists .artist {
+    display: flex;
+    align-items: center;
+    width: 472px;
+    padding: 15px;
+    text-align: center;
+    }
+    .all-artists .artist img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+    .all-artists .artist p{
+    margin-left: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fefefe;
+    }
+    
+    .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    .close:hover, .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    }
+.layout .main{
+    margin-top: 7px;
+    width: 980px;
+}
+.layout .main .header{
+    position: relative;
+    width: 964px;
+    height: 68px;
+    display: list-item;
+    width: 964px;
+}
+.layout .main .header h5{
+   width: 964px; 
+   font-size: 36px;
+   color: #ffffff;
+   
+}
+.layout .main .header h1{
+    font-size: 12px;
+    color:#818c94;
+    padding-top: 5px;
+
+}
+.layout .main .btns{
+     width: 964px;
+     height: 40px;
+     margin-top: 16px;
+     padding-left: 8px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.layout .btns ul{ 
+    list-style: none;  
+}
+.layout .btns ul li button{
+    height:41.6px;
+    width:120.925px;
+    border-radius: 30px;
+    background-color:#eb3e3ed8;
+    color: #ffffff;
+    font-family:'roboto',sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+}
+.layout .btns .btnsr ul{
+    display:flex;
+    gap:20px;
+    list-style: none;
+}
+.layout .btns .btnsr ul li button{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-color:#21252D;
+    border: #000000;
+    color: #ffffff;
+    font-family:'roboto',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.layout .main .track_details{
+    height: 16px;
+    width: 964px;
+    margin: 22px;
+    display:flex;
+    color: #ffffff;
+}
+.layout .main .track_details .ser_detail{
+    padding-left: 16px;
+    width: 385px;
+    
+}
+.layout .main .track_details .ser_detail ul{
+    display: flex;
+    list-style: none;
+    color: #8f9195;
+}
+.layout .main .track_details .ser_detail ul li{
+    font-size: 13px;
+    letter-spacing: 1.2px;
+}
+.layout .main .track_details .ser_detail ul li h5{
+    margin-left: 8px;
+    letter-spacing: 1.2px;
+}
+.layout .main .track_details .album_detail{
+    width: 193px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    color: #8f9195;
+}
+.layout .main .track_details .DUR_detail{
+    width: 116px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    color: #8f9195;
+}
+.layout .main .song_details{
+    display: flex;
+    height: 52px;
+    width: 964px;
+    padding: 8px 12px 8px 16px;
+    /* border: 1px solid #3D464D; */
+}
+.layout .main .song_details:hover{
+ border: 1px solid #3D464D;
+ border-radius: 0.75rem;
+}
+.layout .main .song_details .ser_detail{
+    height: 50px;
+    width: 374px;
+    min-height: auto;
+    min-width: auto;
+}   
+.layout .main .song_details .ser_detail ul{
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+}
+.layout .main .song_details .ser_detail ul li h5{
+    height: 15px;
+    width: 5px;
+    min-width: auto;
+    min-height: auto;
+    padding-left: 16px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+.layout .main .song_details .ser_detail ul li img{
+    margin-left: 10px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.layout .main .song_details .ser_detail ul li{
+    position: relative;
+}
+.layout .main .song_details .ser_detail ul li i.bi-play-fill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hide the play icon */
+    transition: opacity 0.3s ease-in-out;
+}
+.layout .main .song_details .ser_detail ul li:hover i.bi-play-fill {
+    opacity: 1; /* Show the play icon on hover */
+}
+.layout .main .song_details .ser_detail ul li h1{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 15px 0px 0px  10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.layout .main .song_details .ser_detail ul li h1:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.layout .main .song_details .artist_detail{
+    height: 20px;
+    width: 171px;
+    padding-left: 20px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.layout .main .song_details .artist_detail a {
+    color:#979595;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+}
+.layout .main .song_details .artist_detail a:hover{
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.layout .main .song_details .DUR_detail{
+    height: 16px;
+    width: 112px;
+    padding-left: 30px;
+    margin-top: 15px;
+    color:#979595;
+}
+.layout .main .song_details .icons{
+    width: 93px;
+    height: 24px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.layout .main .song_details .icons ul{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    gap: 10px;
+    justify-content: right;
+}
+.layout .main .song_details .icons ul li button{
+    height:24px;
+    width:24px;
+    background-color:black;
+    border: #000000;
+    color: #ffffff;
+    font-family:'roboto',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
